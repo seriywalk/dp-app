@@ -1,4 +1,2 @@
 FROM nginx:latest
-#COPY default.conf /etc/nginx/conf.d/default.conf
-COPY index.html upperator/ser_nginx:/usr/share/nginx/html/index.html
-EXPOSE 80
+COPY content /usr/share/nginx/html
